@@ -1,6 +1,8 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Contents from "../components/Contents";
+import Navi from "../components/Navi";
 
 function Detail() {
   const [loading, setLoading] = useState(true);
@@ -19,6 +21,7 @@ function Detail() {
 
   return (
     <div>
+      <Navi />
       {loading ? (
         <h1>loading...</h1>
       ) : (

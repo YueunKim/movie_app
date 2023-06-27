@@ -1,5 +1,7 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import Main from "../components/Main";
+import Navi from "../components/Navi";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -19,6 +21,7 @@ function Home() {
 
   return (
     <div>
+      <Navi />
       {loading ? (
         <h1>loading...</h1>
       ) : (
